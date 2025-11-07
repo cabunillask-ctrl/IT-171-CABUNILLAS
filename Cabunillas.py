@@ -5,27 +5,27 @@ treasure_x = 5
 treasure_y = 3
 game_running = True
 
-print(f"Find the treasure at ({treasure_x}, {treasure_y})! ")
+print(f"Find the treasure at ({treasure_x}, {treasure_y})!")
+
 
 while game_running:
-    move = input("Enter move (up/down/left/right): ")
+    print(f"Player position: ({player_x}, {player_y})")
+    move = input("Enter move (up/down/left/right): ").lower()
 
-print(f"Player position: ({player_x}, {player_y})")
-while game_running:
-    move = input("Enter move (up/down/left/right): ")
-
+    
     if move == "right":
         player_x += 1
-    if move == "left":
-        player_x += 1
-    if move == "up":
-        player_x += 1
-    if move == "down":
-        player_x += 1
+    elif move == "left":
+        player_x -= 1
+    elif move == "up":
+        player_y += 1
+    elif move == "down":
+        player_y -= 1
+    else:
+        print("Invalid move! Try again.")
+        continue
 
-print(f"Score → You: {player_score}, Computer: {computer_score}\n")
-
-if player_score == 2:
-    print("You won the game!")
-else:
-    print("Computer won the game!")
+    
+    if player_x == treasure_x and player_y == treasure_y:
+        print(f" You found the treasure at ({treasure_x}, {treasure_y})! You win!")
+        game_running = False
