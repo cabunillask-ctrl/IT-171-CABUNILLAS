@@ -31,4 +31,6 @@ while game_running:
         game_running = False
 
     print("Player movement feature Added")
+    print("Welcome to Ken Maze")
+
 
