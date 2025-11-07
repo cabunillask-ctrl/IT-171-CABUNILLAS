@@ -29,3 +29,6 @@ while game_running:
     if player_x == treasure_x and player_y == treasure_y:
         print(f" You found the treasure at ({treasure_x}, {treasure_y})! You win!")
         game_running = False
+
+    print("Player movement feature Added")
+
