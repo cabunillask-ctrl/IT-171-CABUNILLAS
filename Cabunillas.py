@@ -32,5 +32,11 @@ while game_running:
 
     print("Player movement feature Added")
     print("Welcome to Ken Maze")
+    print("Use W to move up")
+    print("Use S to move down")
+    print("Use A to move left")
+    print("Use D to move right")
+
+
 
 
