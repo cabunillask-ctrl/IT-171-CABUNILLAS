@@ -1,3 +1,9 @@
+Commits made:
+1. Initial commit – added the game template and started the project.
+2. Player movement commit – implemented basic player movement.
+3. Game win commit – added the winning condition and message.
+This project shows how to use Git with incremental commits while developing a simple game.
+
 player_x = 0
 player_y = 0
 
